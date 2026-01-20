@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feature Selection</title>
+    <style>
+        /* Page basics */
+body {
+font-family: Arial, sans-serif;
+padding: 20px;
+}
+
+/* Container */
+.feature-card-container {
+display: flex;
+gap: 15px;
+}
+
+/* Feature card labels */
+.feature-card {
+display: flex;
+align-items: center;
+gap: 8px;
+padding: 10px;
+border: 1px solid #ccc;
+cursor: pointer;
+}
+
+/* Checkbox styling */
+.feature-card input[type="checkbox"] {
+appearance: none;
+width: 20px;
+height: 20px;
+border-width: 2px;
+border-style: solid;
+border-color: #555;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* Checked state */
+.feature-card input[type="checkbox"]:checked {
+background-color: #4caf50;
+border-color: #2e7d32;
+}
+
+/* Checkmark */
+.feature-card input[type="checkbox"]:checked::after {
+content: "✓";
+color: white;
+font-size: 14px;
+font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+
+<h1>Feature Selection</h1>
+
+<div class="feature-card-container">
+    <label class="feature-card">
+        <input type="checkbox">
+        Dark Mode
+    </label>
+
+```
+<label class="feature-card">
+    <input type="checkbox">
+    Notifications
+</label>
+
+<label class="feature-card">
+    <input type="checkbox">
+    Auto Save
+</label>
+```
+
+</div>
+
+</body>
+</html>
