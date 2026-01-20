@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pricing Plans</title>
+    <style>
+ /* Page styling */
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f6f8;
+padding: 30px;
+}
+
+h1 {
+text-align: center;
+color: #333;
+}
+
+/* Pricing container */
+.pricing-container {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+}
+
+/* Pricing cards */
+.pricing-card {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+flex: 0 0 200px;
+border: 2px solid black;
+padding: 20px;
+text-align: center;
+color: white;
+border-radius: 8px;
+}
+
+/* Individual plan colors */
+.basic-plan {
+order: 0;
+background-color: #4caf50;
+}
+
+.pro-plan {
+order: 1;
+flex-grow: 2;
+background-color: #2196f3;
+}
+
+.premium-plan {
+order: 2;
+background-color: #9c27b0;
+}
+
+/* Price text */
+.pricing-card p {
+font-size: 1.2em;
+font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+
+<h1>Pricing Plans</h1>
+
+<div class="pricing-container">
+    <div class="pricing-card basic-plan">
+        <h2>Basic</h2>
+        <p>$9/month</p>
+    </div>
+
+```
+<div class="pricing-card pro-plan">
+    <h2>Pro</h2>
+    <p>$19/month</p>
+</div>
+
+<div class="pricing-card premium-plan">
+    <h2>Premium</h2>
+    <p>$29/month</p>
+</div>
+```
+
+</div>
+
+</body>
+</html>
