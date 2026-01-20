@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Document</title>
+    <style>
+        /* Email container */
+#email {
+padding: 50px;
+margin-top: 50px;
+width: 500px;
+border: 2px solid #000;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+/* Confidential and Top Secret labels */
+#confidential,
+#top-secret {
+display: inline-block;
+padding: 10px;
+margin-left: 10px;
+border: 2px solid red;
+font-weight: bold;
+}
+
+/* Individual rotations */
+#confidential {
+transform: rotate(-10deg);
+}
+
+#top-secret {
+transform: rotate(10deg);
+}
+
+/* Blurred text */
+.blurred {
+filter: blur(3px);
+}
+
+    </style>
+</head>
+<body>
+
+<main id="email">
+
+```
+<div id="confidential">CONFIDENTIAL</div>
+<div id="top-secret">TOP SECRET</div>
+
+<p>
+    This email contains <span class="blurred">sensitive information</span> that should
+    not be shared outside the organization.
+</p>
+
+<p>
+    Please review the <span class="blurred">attached documents</span> carefully before
+    proceeding with any decisions.
+</p>
+
+<p>
+    Unauthorized disclosure of <span class="blurred">classified content</span> is
+    strictly prohibited.
+</p>
+```
+
+</main>
+
+</body>
+</html>
