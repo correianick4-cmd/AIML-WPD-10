@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Portfolio</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #74ebd5, #9face6);
+        margin: 0;
+        padding: 20px;
+      }
+
+      /* Main container */
+      .container {
+        max-width: 900px;
+        margin: auto;
+        background-color: #ffffff;
+        padding: 25px;
+        border-radius: 10px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      h2 {
+        color: #444;
+        border-bottom: 3px solid #74ebd5;
+        padding-bottom: 5px;
+      }
+
+      p {
+        color: #555;
+        line-height: 1.6;
+      }
+
+      /* Cards for sections */
+      .card {
+        background-color: #f9f9f9;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #fff;
+      }
+
+      table th {
+        background-color: #74ebd5;
+        color: #333;
+        padding: 10px;
+      }
+
+      table td {
+        padding: 10px;
+        text-align: left;
+      }
+
+      table tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 6px;
+      }
+
+      form {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        width: 300px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+      }
+
+      input[type="submit"] {
+        background-color: #74ebd5;
+        color: #333;
+        border: none;
+        margin-top: 10px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #5ad1c4;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>My Portfolio</h1>
+
+      <div class="card">
+        <h2>About Me</h2>
+        <p>
+          Hello! My name is Nick Correia. I am currently studying AI/ML and
+          interested in web development and software programming. I enjoy
+          learning new technologies and building projects.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Education</h2>
+        <table border="1">
+          <tr>
+            <th>Qualification</th>
+            <th>Institution</th>
+            <th>Year</th>
+          </tr>
+          <tr>
+            <td>Diploma in Computer Science</td>
+            <td>Viva College</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>Higher Secondary</td>
+            <td>Carmel Convent High School</td>
+            <td>2022</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>C</li>
+          <li>C++</li>
+          <li>Java</li>
+          <li>Flutter</li>
+          <li>Python</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Contact Me</h2>
+        <form>
+          <label>Name:</label>
+          <input type="text" />
+
+          <label>Email:</label>
+          <input type="email" />
+
+          <label>Message:</label>
+          <textarea rows="4"></textarea>
+
+          <input type="submit" value="Send" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
