@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="wpd-4.css">
+</head>
+<script src="script.js"></script>
+
+<body>
+
+    <!-- Main Heading -->
+    <h1>My Portfolio</h1>
+
+    <!-- About Me Section -->
+    <h2>About Me</h2>
+<p id="aboutText">
+    Hello! My name is Nick. I am Currently Studying AI/ML interested in
+    web development and software programming. I enjoy learning new
+    technologies and building projects.
+</p>
+
+<button id="changeTextBtn">Change About Text</button>
+    <!-- Education Section -->
+    <h2>Education</h2>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>Qualification</th>
+            <th>Institution</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td>Diploma in Computer Science</td>
+            <td>Viva College</td>
+            <td>2025</td>
+        </tr>
+        <tr>
+            <td>Higher Secondary</td>
+            <td>Carmel Convent High School</td>
+            <td>2022</td>
+        </tr>
+    </table>
+
+    <!-- Skills Section -->
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Flutter</li>
+        <li>Python</li>
+    </ul>
+
+    <!-- Contact Section -->
+   <form id="contactForm">
+    <label>Name:</label><br>
+    <input type="text" id="name"><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" id="email"><br><br>
+
+    <label>Message:</label><br>
+    <textarea id="message" rows="4" cols="30"></textarea><br><br>
+
+    <input type="submit" value="Send">
+</form>
+
+<p id="responseMsg"></p>
+
+
+</body>
+</html>
+
+document.addEventListener("click", e => {
+    if (e.target.id === "changeTextBtn") {
+        const p = document.getElementById("aboutText");
+        p.textContent = p.dataset.alt ||= "AI/ML student focused on web & software development.";
+        [p.textContent, p.dataset.alt] = [p.dataset.alt, p.textContent];
+    }
+});
+
+document.getElementById("contactForm").addEventListener("submit", e => {
+    e.preventDefault();
+    const name = e.target.name.value.trim();
+    document.getElementById("responseMsg").textContent =
+        name ? `Thanks, ${name}! Message sent.` : "Name is required.";
+});
